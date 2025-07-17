@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TREND</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-MpI3g9UuKzYimk7zJAYqzMKWWyQo6UomF0RKxD1WCM0wzZ29g6sTWPCwq7YqVXb2Ch+vNkz07GgA8AwlQ1li5w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="images/SIL_90_Icon-Black.png" alt="logo" class="logo" />
+      <div class="brand-text">
+        <div class="main-title">TREND</div>
+        <div class="sub-title"></div>
+      </div>
+    </div>
+    <nav class="nav-links" role="navigation" aria-label="Primary Navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Reports ▾</button>
+        <div class="dropdown-content">
+          <a href="LE.html">Language Engagements</a>
+          <a href="RA.html">Reportable Activities</a>
+          <a href="Staffing.html">Staff Assignment</a>
+          <a href="orghealth.html">Organisational Health</a>
+          <a href="datagaps.html">Data Gaps</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <button class="dropbtn2">Help Guide ▾</button>
+        <div class="dropdown-content2">
+          <a href="About.html">About TREND</a>
+          <a href="DF.html">Data Definition</a>
+          <a href="HG.html">Help Guide</a>
+          <a href="CU.html">Contact Us</a>
+        </div>
+      </div>
+      <a href="logout.html" class="logout">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <iframe 
+    src="https://docs.google.com/document/d/1mK7J4Z7HpCG2yrV7oNdspm1v7fcmDtLgeC7pBPcioz8/preview" 
+    style="border: none; overflow: hidden;">
+  </iframe>
+  </main>
+
+  <!-- Hide Navbar on Scroll -->
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      navbar.style.top = currentScroll > lastScrollTop ? "-100px" : "0";
+      lastScrollTop = Math.max(currentScroll, 0);
+    });
+  </script>
+</body>
+</html>

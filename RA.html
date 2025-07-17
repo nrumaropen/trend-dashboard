@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TREND</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-MpI3g9UuKzYimk7zJAYqzMKWWyQo6UomF0RKxD1WCM0wzZ29g6sTWPCwq7YqVXb2Ch+vNkz07GgA8AwlQ1li5w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="brand">
+      <img src="images/SIL_90_Icon-Black.png" alt="logo" class="logo" />
+      <div class="brand-text">
+        <div class="main-title">TREND</div>
+        <div class="sub-title"></div>
+      </div>
+    </div>
+    <nav class="nav-links" role="navigation" aria-label="Primary Navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Reports ▾</button>
+        <div class="dropdown-content">
+          <a href="LE.html">Language Engagements</a>
+          <a href="RA.html">Reportable Activities</a>
+          <a href="Staffing.html">Staff Assignment</a>
+          <a href="orghealth.html">Organisational Health</a>
+          <a href="datagaps.html">Data Gaps</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <button class="dropbtn2">Help Guide ▾</button>
+        <div class="dropdown-content2">
+          <a href="About.html">About TREND</a>
+          <a href="DF.html">Data Definition</a>
+          <a href="HG.html">Help Guide</a>
+          <a href="CU.html">Contact Us</a>
+        </div>
+      </div>
+      <a href="logout.html" class="logout">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class='tableauPlaceholder' id='viz1752723233919' 
+        style='position: relative'>
+        <noscript>
+            <a href='#'>
+            <img alt='Dashboard 1 ' 
+                 src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USNP&#47;Dashboard1&#47;1_rss.png' 
+                 style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' 
+                value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' 
+                value='3' />
+            <param name='site_root'
+                value='' />
+            <param name='name' 
+                value='USNP&#47;Dashboard1' />
+            <param name='tabs'
+                value='no' />
+            <param name='toolbar' 
+                value='yes' />
+            <param name='static_image' 
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USNP&#47;Dashboard1&#47;1.png' />
+            <param name='animate_transition' 
+                value='yes' />
+            <param name='display_static_image'
+                value='yes' />
+            <param name='display_spinner' 
+                value='yes' />
+            <param name='display_overlay' 
+                value='yes' />
+            <param name='display_count' 
+                value='yes' />
+            <param name='language' 
+                value='en-US' />
+            </object>
+        </div>                
+    </div>
+  </main>
+
+  <!-- Tableau Script -->
+  <script type='text/javascript'>
+    const divElement = document.getElementById('viz1752723233919');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <!-- Hide Navbar on Scroll -->
+  <script>
+  let prevScrollPos = window.pageYOffset;
+  window.addEventListener('scroll', function () {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById('navbar');
+
+    if (prevScrollPos > currentScrollPos) {
+      // scrolling up
+      navbar.classList.remove('hidden');
+    } else {
+      // scrolling down
+      navbar.classList.add('hidden');
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+</body>
+</html>

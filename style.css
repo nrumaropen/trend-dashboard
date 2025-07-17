@@ -1,0 +1,223 @@
+/* Base Styles & Page Layout
+============================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Source Sans 3', sans-serif;
+  color: #333;
+  background: url('images/Topography_LightGray_Alternate.png') center/cover no-repeat;
+  overflow-x: hidden;
+}
+/*  Navbar & Header
+============================ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CCEDF9;
+    padding: 1rem 4rem;
+    color: #196CC0;
+    position: sticky;
+    top: -100;
+    left: 0;
+    width: 90%;
+    z-index: 10;
+    transition: top 0.3s ease-in-out;
+    }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  letter-spacing: 0.1em;
+  color: #196CC0;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column-reverse;
+  line-height: 1;
+}
+.main-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #196CC0;
+}
+.sub-title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #555;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+/* = Navigation Links
+============================ */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+/* = Dropdown Menu 
+============================ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E5EEF8;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  z-index: 999;
+  font-family: 'Source Sans 3';
+}
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #E5EEF8;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #E5EEF8;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  z-index: 999;
+  font-family: 'Source Sans 3';
+}
+.dropdown-content2 a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content2 a:hover {
+  background-color: #E5EEF8;
+}
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+.nav-links a,
+.dropbtn {
+  color: #196CC0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: 'Source Sans 3';
+}
+.dropbtn2 {
+  color: #196CC0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: 'Source Sans 3';
+}
+.nav-links a:hover,
+.dropbtn:hover {
+  color: #ff6600;
+}
+.nav-links .logout {
+  font-weight: 700;
+  color: #ff4444;
+}
+/* Main Content
+============================ */
+.welcome-msg {
+  gap: 80;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #196CC0;
+  text-align: center;
+}
+.intro-msg {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #858585;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-family: 'Source Sans 3';
+}
+iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 1000px;
+  border: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  margin: 40px auto 100px auto;
+  padding: 0 20px;
+  }
+/*  Map & Tableau Container
+============================ */
+.map-container {
+  margin: 40px auto 100px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.tableauPlaceholder,
+.tableauViz {
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ============================
+   Utility & Misc
+============================ */
+.user {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #196CC0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
